@@ -1,78 +1,120 @@
 video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
 }
-
 
 /*HERO SECTION*/
 
 .hero-container {
-    /* background: url("../images/img-6.jpg") center center/cover no-repeat; */
-    /*overflow: auto;*/
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    background-color: black;
-    object-fit: contain;
+  /* background: url("../images/img-6.jpg") center center/cover no-repeat; */
+  /*overflow: auto;*/
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  object-fit: contain;
 }
 
 .hero-container-div-pos1 {
-    margin-top: 5%;
-    margin-right: -40%;
+  margin-top: 5%;
+  margin-right: -40%;
 }
 
 .hero-container-h1-pos1 {
-    font-family: 'Roboto Mono', monospace;
-    display: inline;
-    color: white
+  font-family: "Roboto Mono", monospace;
+  display: inline;
+  color: white;
 }
 
 .hero-container-h1-pos2 {
-    font-family: 'Roboto Mono', monospace;
-    display: inline;
-    color: rgb(101, 83, 255)
+  font-family: "Roboto Mono", monospace;
+  display: inline;
+  color: rgb(101, 83, 255);
 }
 
 .hero-container-h1-pos3 {
-    margin-top: 25px;
-    margin-bottom: 0px;
-    font-family: 'Roboto Mono', monospace;
-    color: rgb(128, 128, 128)
+  margin-top: 25px;
+  margin-bottom: 0px;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(128, 128, 128);
 }
 
 /*Skills section*/
 
-.skills-container {
-    height: 65vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    background-color: black;
-    object-fit: contain;
+.skills-container-v1 {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  object-fit: contain;
+}
+
+.skills-container-v2 {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  object-fit: contain;
 }
 
 .skills-container-h1-pos1 {
-    margin-top: 5%;
-    margin-right: 40%;
-    color: white;
+  margin-top: 5%;
+  margin-right: 40%;
+  color: white;
 }
 
 .skills-container-h1-name {
-    color: white;
+  color: white;
 }
 
+.personal-skills {
+  width: 55%;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
 
 /*Projects styles*/
 
 .projects-container {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  object-fit: contain;
+}
+
+.projects-container-div-pos1 {
+  color: white;
+  margin-top: 5%;
+  margin-right: -40%;
+}
+
+.projects-container-div-pos2 {
+  text-align: right;
+  color: #6553ff;
+  width: 500;
+  margin-right: -40%;
+}
+
+/* Contact */
+.contact-container {
     height: 65vh;
     width: 100%;
     display: flex;
@@ -83,15 +125,17 @@ video {
     object-fit: contain;
 }
 
-.projects-container-div-pos1 {
-    color: white;
-    margin-top: 5%;
-    margin-right: -40%;
+/* SVG */
+
+.line-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
-.projects-container-div-pos2 {
-    text-align: right;
-    color: #6553FF;
-    width: 500;
-    margin-right: -40%;
+svg {
+  display: inline-block;
 }

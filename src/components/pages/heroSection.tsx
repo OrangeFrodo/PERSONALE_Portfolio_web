@@ -18,13 +18,13 @@ function HeroSection() {
                     </div>
                     <div>
                         <h1 className='hero-container-h1-pos3'> // I am student, who is looking for experience</h1>
-                        <h1 className="hero-container-h1-pos1">currentPosition = </h1>
-                        <h1 className="hero-container-h1-pos2">"unemployed"</h1>
+                        <h2 className="hero-container-h1-pos1">currentPosition = </h2>
+                        <h2 className="hero-container-h1-pos2">"unemployed"</h2>
                     </div>
                     <div>
                         <h1 className='hero-container-h1-pos3'> // Current list of hobbies</h1>
-                        <h1 className="hero-container-h1-pos1">hobbies = </h1>
-                        <h1 className="hero-container-h1-pos2">["Gym", "Movies", "Books", "Philosophy"]</h1>
+                        <h2 className="hero-container-h1-pos1">hobbies = </h2>
+                        <h2 className="hero-container-h1-pos2">["Gym", "Movies", "Books", "Philosophy"]</h2>
                     </div>
                 </div>
                 <div>

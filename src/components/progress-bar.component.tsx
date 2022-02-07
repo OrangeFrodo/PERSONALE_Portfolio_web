@@ -41,7 +41,7 @@ export const ProgressBar = (props: { name: any; bgcolor: any; completed: any; })
             <p style={headline}>{name}</p>
             <div style={containerStyles}>
                 <div style={fillerStyles}>
-                    <span style={labelStyles}>{`${completed}%`}</span>
+                    <span style={labelStyles}>{/*`${completed}%`*/}</span>
                 </div>
             </div>
         </div>
