@@ -11,6 +11,8 @@ export default function Skills() {
     const testData = [
         { name: "React", bgcolor: "#6553FF", completed: 72 },       // React
         { name: "React Native", bgcolor: "#6553FF", completed: 68 },   // React Native
+        { name: "Java Script", bgcolor: "#6553FF", completed: 60 },   // Java Script
+        { name: "Type Script", bgcolor: "#6553FF", completed: 60 },   // Type Script
         { name: "Java", bgcolor: "#6553FF", completed: 56 },        // Java
         { name: "C", bgcolor: "#6553FF", completed: 45 },           // C
         { name: "Kotlin", bgcolor: "#6553FF", completed: 42 },      // Kotlin

@@ -6,18 +6,16 @@ import { BrowserRouter as Router, Switch, Route, BrowserRouter } from 'react-rou
 // Component
 import Navbar from './components/navbar';
 import Home from './components/pages/home';
-import Skills from './components/pages/skills';
 import SvgOne from './components/pages/svgOne';
-import SvgTwo from './components/pages/svgTwo';
 
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Navbar/>
-      <SvgOne />
-      <Home />
-    </BrowserRouter>
+      <BrowserRouter>
+        <Navbar />
+        <Home />
+        <SvgOne />
+      </BrowserRouter>
     </>
   );
 }
