@@ -17,7 +17,6 @@ video {
   flex-direction: column;
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  background-color: black;
   object-fit: contain;
 }
 
@@ -48,13 +47,12 @@ video {
 /*Skills section*/
 
 .skills-container-v1 {
-  height: 60vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  background-color: black;
   object-fit: contain;
 }
 
@@ -65,11 +63,11 @@ video {
   flex-direction: column;
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  background-color: black;
   object-fit: contain;
 }
 
 .skills-container-h1-pos1 {
+  font-size: 2rem;
   margin-top: 5%;
   margin-right: 40%;
   color: white;
@@ -81,7 +79,6 @@ video {
 
 .personal-skills {
   width: 55%;
-  margin-top: 30px;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -96,24 +93,20 @@ video {
   flex-direction: column;
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  background-color: black;
   object-fit: contain;
 }
 
 .projects-items {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 750px;
 }
 
 .projects-card {
   float: left;
-  margin: 50px;
   margin-left: -50%;
 }
 
 .projects-list-projects {
+  font-size: 2rem;
   color: white;
   padding-top: 5%;
   margin-right: -35%;
@@ -128,6 +121,39 @@ video {
   margin-right: -15%;
 }
 
+.project-set ::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.project-set :hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.project-set ::before {
+  content: " ";
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgb(255, 255, 255) !important;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.project-set  {
+  font-style: italic;
+  text-align: end;
+  font-size: large;
+  width: 400px;
+  height: 40px;
+  margin: 30px;
+  position: relative;
+}
+
+
 /* Contact */
 .contact-container {
     height: 65vh;
@@ -136,7 +162,6 @@ video {
     flex-direction: column;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    background-color: black;
     object-fit: contain;
 }
 

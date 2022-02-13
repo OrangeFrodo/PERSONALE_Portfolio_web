@@ -1,0 +1,17 @@
+{
+    "Fridge" : {
+        "id": 0,
+        "header": "Smart fridge app",
+        "content":"Not cleaning your fridge can cause smell.",
+        "button": "Github code"
+        
+    },
+    "Comics" : {
+        "id": 1,
+        "header": "Comic reader app",
+        "content":"Not cleaning your fridge can cause smell.",
+        "button": "Github code"
+
+    }
+
+}

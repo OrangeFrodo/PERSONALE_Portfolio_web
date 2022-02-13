@@ -8,22 +8,15 @@ import testPhoto from '../../images/img-1.jpg'
 
 // Css
 import "./stylesPages.css"
+import jsonData from '../content.json'
 
-// Project
-import { Project }  from './project';
 import gsap from 'gsap';
 
 export default function ListOfProjectsPage() {
 
-    // const [nameOfProject, setProject] = useState("Fridge")
-    // let content = "";
-
-    // if (nameOfProject == "Fridge") {
-    //     content = "Aloha ella"
-    // }
-    // if (nameOfProject == "Comics reader") {
-    //     content = "Commico"
-    // }
+    // Set state for fridge
+    const [nameOfProject, setProject] = useState(0)
+    const [contentOfProject, setContentOfProject] = useState(jsonData.Fridge)
 
     const boxRef = useRef(gsap) as unknown as React.MutableRefObject<HTMLInputElement>
 
@@ -31,6 +24,7 @@ export default function ListOfProjectsPage() {
         { name: "Fridge" },
         { name: "Comics reader" }
     ]
+
 
     useEffect(() => {
         gsap.to(boxRef.current, { x: 100 })
@@ -41,10 +35,23 @@ export default function ListOfProjectsPage() {
         <section id='projects'>
             <div className="projects-container">
                 <h1 className='projects-list-projects'>List of projects</h1>
-                <div className='prjects-items'>
+                <div className='projects-items'>
                     <div className='projects-container-div-pos2'>
                         {listOfProjects.map((item, idx) => (
-                            <Project key={idx} name={item.name} />
+                            // On click function, was not able to move it to separate function
+                            <div className='project-set'>
+                                <a onClick={() => {
+                                    // Set fridge
+                                    if (idx == 0) {
+                                        setContentOfProject(jsonData.Fridge)
+                                    }
+                                    // Set comic
+                                    if (idx == 1) {
+                                        setContentOfProject(jsonData.Comics)
+                                    }
+                                }
+                                }><h1>{item.name}</h1></a>
+                            </div>
                         ))}
                     </div>
                     <div
@@ -64,11 +71,15 @@ export default function ListOfProjectsPage() {
                             <Card.Body style={{
                                 color: "black"
                             }}>
-                                <Card.Title>Ale</Card.Title>
+                                <Card.Title>
+                                    {contentOfProject.header}
+                                </Card.Title>
                                 <Card.Text>
-                                    Radost
+                                    {contentOfProject.content}
                                 </Card.Text>
-                                <Button>Go somewhere</Button>
+                                <Button>
+                                    {contentOfProject.button}
+                                </Button>
                             </Card.Body>
                         </Card>
                     </div>
