@@ -4,7 +4,7 @@ import { ProgressBar } from '../progress-bar.component';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
 
-import testPhoto from '../../images/img-1.jpg'
+import testPhoto from '../../images/phone.png'
 
 // Css
 import "./stylesPages.css"
@@ -58,33 +58,38 @@ export default function ListOfProjectsPage() {
                         className='projects-card'
                         style={{ color: "white" }}
                     >
-                        <Card style={{
-                            width: '30rem',
-                            height: '50rem',
-                            backgroundColor: "white",
-                            textAlign: "center",
-                            borderRadius: 50
-                        }} ref={boxRef}>
-                            <Card.Img variant="top" src={testPhoto} style={{
-                                width: 300
+                        <Card className="bg-dark text-white" ref={boxRef}>
+                            <Card.Img src={testPhoto} style={{
+                                position: 'absolute',
+                                textAlign: 'center',
+                                width: 500,
                             }} />
                             <Card.Body style={{
-                                color: "black"
+                                padding: 100,
+                                width: 250,
                             }}>
-                                <Card.Title>
+                                <Card.Title style={{
+                                        fontSize: 25
+                                    }}
+                                >
                                     {contentOfProject.header}
                                 </Card.Title>
                                 <Card.Text>
                                     {contentOfProject.content}
                                 </Card.Text>
-                                <Button>
+
+                                <Button
+                                    style={{
+                                        position: 'relative',
+                                        zIndex: 10,
+                                    }}
+                                >
                                     {contentOfProject.button}
                                 </Button>
                             </Card.Body>
                         </Card>
                     </div>
                 </div>
-
             </div>
         </section>
     );

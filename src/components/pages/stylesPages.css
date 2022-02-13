@@ -87,7 +87,7 @@ video {
 /*Projects styles*/
 
 .projects-container {
-  height: 95vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -144,6 +144,7 @@ video {
 }
 
 .project-set  {
+  padding-right: 5px;
   font-style: italic;
   text-align: end;
   font-size: large;
