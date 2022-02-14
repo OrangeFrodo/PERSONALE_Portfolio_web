@@ -37,7 +37,7 @@ export const ProgressBar = (props: { name: any; bgcolor: any; completed: any; })
     }
 
     return (
-        <div style={{display: "flex", marginRight: 550}}>
+        <div className="programming-skills" style={{display: "flex", marginRight: 550}}>
             <p style={headline}>{name}</p>
             <div style={containerStyles}>
                 <div style={fillerStyles}>

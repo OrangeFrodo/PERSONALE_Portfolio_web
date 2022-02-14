@@ -18,6 +18,7 @@ export default function ListOfProjectsPage() {
     const [nameOfProject, setProject] = useState(0)
     const [contentOfProject, setContentOfProject] = useState(jsonData.Fridge)
 
+    // Animation
     const boxRef = useRef(gsap) as unknown as React.MutableRefObject<HTMLInputElement>
 
     const listOfProjects = [
@@ -25,6 +26,12 @@ export default function ListOfProjectsPage() {
         { name: "Comics reader" }
     ]
 
+    const redirectToGitHub = () => {
+        window.open(
+            contentOfProject.link,
+            '_blank' // <- This is what makes it open in a new window.
+        );
+    }
 
     useEffect(() => {
         gsap.to(boxRef.current, { x: 100 })
@@ -37,6 +44,7 @@ export default function ListOfProjectsPage() {
                 <h1 className='projects-list-projects'>List of projects</h1>
                 <div className='projects-items'>
                     <div className='projects-container-div-pos2'>
+                        {/* List throught list of projects */}
                         {listOfProjects.map((item, idx) => (
                             // On click function, was not able to move it to separate function
                             <div className='project-set'>
@@ -54,6 +62,8 @@ export default function ListOfProjectsPage() {
                             </div>
                         ))}
                     </div>
+
+                    {/* Card */}
                     <div
                         className='projects-card'
                         style={{ color: "white" }}
@@ -69,8 +79,9 @@ export default function ListOfProjectsPage() {
                                 width: 250,
                             }}>
                                 <Card.Title style={{
-                                        fontSize: 25
-                                    }}
+                                    fontSize: 25,
+                                    paddingBottom: 25,
+                                }}
                                 >
                                     {contentOfProject.header}
                                 </Card.Title>
@@ -83,14 +94,15 @@ export default function ListOfProjectsPage() {
                                         position: 'relative',
                                         zIndex: 10,
                                     }}
+                                    onClick={(() => redirectToGitHub())}
                                 >
-                                    {contentOfProject.button}
+                                    SeeGithub code
                                 </Button>
                             </Card.Body>
                         </Card>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

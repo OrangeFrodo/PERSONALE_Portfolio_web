@@ -11,7 +11,7 @@ video {
 .hero-container {
   /* background: url("../images/img-6.jpg") center center/cover no-repeat; */
   /*overflow: auto;*/
-  height: 60vh;
+  height: 561px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -26,13 +26,11 @@ video {
 }
 
 .hero-container-h1-pos1 {
-  font-family: "Roboto Mono", monospace;
   display: inline;
   color: white;
 }
 
 .hero-container-h1-pos2 {
-  font-family: "Roboto Mono", monospace;
   display: inline;
   color: rgb(101, 83, 255);
 }
@@ -40,14 +38,13 @@ video {
 .hero-container-h1-pos3 {
   margin-top: 25px;
   margin-bottom: 0px;
-  font-family: "Roboto Mono", monospace;
   color: rgb(128, 128, 128);
 }
 
 /*Skills section*/
 
 .skills-container-v1 {
-  height: 65vh;
+  height: 610.35px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -57,7 +54,7 @@ video {
 }
 
 .skills-container-v2 {
-  height: 35vh;
+  height: 328.65px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -84,10 +81,15 @@ video {
   justify-content: space-between;
 }
 
+.progress-bar {
+  display: "flex";
+  margin-right: 550;
+}
+
 /*Projects styles*/
 
 .projects-container {
-  height: 110vh;
+  height: 1032.9px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -97,7 +99,7 @@ video {
 }
 
 .projects-items {
-  width: 750px;
+  width: 40%;
 }
 
 .projects-card {
@@ -121,7 +123,7 @@ video {
   margin-right: -15%;
 }
 
-.project-set ::before {  
+.project-set ::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
@@ -136,14 +138,17 @@ video {
   border-radius: 5px;
   display: block;
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   inset: 0 0 0 0;
-  background: rgb(255, 255, 255) !important;
+  background-color: rgb(255, 255, 255) !important;
   z-index: -1;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
-.project-set  {
+.project-set {
   padding-right: 5px;
   font-style: italic;
   text-align: end;
@@ -154,16 +159,21 @@ video {
   position: relative;
 }
 
-
 /* Contact */
+
+.contact-container-h1-pos1 {
+  font-size: 2rem;
+}
+
 .contact-container {
-    height: 65vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
+  height: 610.35px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
 }
 
 /* SVG */
@@ -181,3 +191,83 @@ video {
   display: inline-block;
 }
 
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 1340px) {
+
+  video {
+    display: none;
+  }
+
+  .hero-container {
+    /* background: url("../images/img-6.jpg") center center/cover no-repeat; */
+    /*overflow: auto;*/
+    font-size: 10px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+
+  .skills {
+    font-size: 10px;
+    height: 610.35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+
+  .skills-container-v1 {
+    font-size: 10px;
+  }
+
+  .projects-container {
+    height: 1032.9px;
+    font-size: 10px !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+
+  .skills-container-v1 {
+    text-align: center !important;
+  }
+
+  .skills-container-h1-pos1 {
+    text-align: center;
+    margin-right: 40%;
+    color: white;
+  }
+
+  .skills-list {
+    text-align: left !important;
+  }
+
+  .programming-skills {
+    width: 200px !important;
+  }
+
+  .svg-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .projects-container {
+    margin-top: 50px;
+  }
+
+  .programming-skills {
+    width: 100px !important;
+    padding-right: -100px !important;
+  }
+}

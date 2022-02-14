@@ -1,16 +1,14 @@
 {
-    "Fridge" : {
-        "id": 0,
-        "header": "Smart fridge",
-        "content":"I created smart fridge application mailny for purposes of keeping track of my stuff in fridge. This application came handy while my living in Finland.",
-        "button": "Github code"
-        
-    },
-    "Comics" : {
-        "id": 1,
-        "header": "Comic reader",
-        "content":"Not cleaning your fridge can cause smell.",
-        "button": "Github code"
-    }
-
+  "Fridge": {
+    "id": 0,
+    "header": "Smart fridge",
+    "content": "I created smart fridge application mainly for purposes of keeping track of my stuff in fridge. This application came handy while my living in Finland.",
+    "link": "https://github.com/OrangeFrodo/voidAlpha"
+  },
+  "Comics": {
+    "id": 1,
+    "header": "Comic reader",
+    "content": "Not cleaning your fridge can cause smell.",
+    "link": "https://github.com/OrangeFrodo/Void"
+  }
 }

@@ -29,10 +29,10 @@ export default function Skills() {
 
     return (
         // Did put hero-container CSS -> if wrong need to create own css class name
-        <section id='skills'>
-            <div className="skills-container-v1">
+        <section id='skills' className="skills">
+            <div className="skills-container-v1" >
                 <h1 className='skills-container-h1-pos1'>Programming skills</h1>
-                <div style={{ marginTop: 30 }}>
+                <div className='skills-list' style={{ marginTop: 30 }}>
                     {testData.map((item, idx) => (
                         <><ProgressBar name={item.name} key={idx} bgcolor={item.bgcolor} completed={item.completed} /> </>
                     ))}
