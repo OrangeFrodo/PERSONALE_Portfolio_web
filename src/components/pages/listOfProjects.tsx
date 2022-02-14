@@ -18,7 +18,7 @@ export default function ListOfProjectsPage() {
     const [nameOfProject, setProject] = useState(0)
     const [contentOfProject, setContentOfProject] = useState(jsonData.Fridge)
 
-    // Animation
+    // Animation state REF
     const boxRef = useRef(gsap) as unknown as React.MutableRefObject<HTMLInputElement>
 
     const listOfProjects = [
@@ -33,6 +33,7 @@ export default function ListOfProjectsPage() {
         );
     }
 
+    // UseEffect
     useEffect(() => {
         gsap.to(boxRef.current, { x: 100 })
     })
