@@ -1,6 +1,3 @@
-import React from 'react';
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
-
 // Css
 import "./stylesPages.css"
 
@@ -26,8 +23,8 @@ export default function Contact() {
         <section id='contact'>
             <div className='contact-container'>
                 <h1 className='contact-container-h1-pos1'>Contact</h1>
-                <p>E-Mail</p>
-                <p>Github</p>
+                <p>E-Mail: daxoja@gmail.com</p>
+                <p>Github: https://github.com/OrangeFrodo</p>
                 {/*                 
                 <Wrapper apiKey={"YOUR_API_KEY"}>
                     <MyMapComponent />

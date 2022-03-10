@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
-import { Button } from './button'
 
 
 // Css
@@ -21,7 +20,7 @@ function Navbar() {
         if (window.innerWidth <= 960) {
             setButton(false)
         } else {
-            setButton(true)
+            setButton(false)
         }
     }
 
@@ -86,14 +85,6 @@ function Navbar() {
                                 smooth
                             >
                                 Contact
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/"
-                                className="nav-links"
-                                onClick={redirectToGitHub}>
-                                <img src={require('../images/gitLogo.jpg')} />
                             </Link>
                         </li>
                     </ul>

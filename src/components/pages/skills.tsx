@@ -1,4 +1,3 @@
-import React from 'react';
 import { ProgressBar } from '../progress-bar.component';
 import PersonalSkills from './personalSkills';
 

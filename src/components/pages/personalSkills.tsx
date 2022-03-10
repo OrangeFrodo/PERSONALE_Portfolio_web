@@ -15,7 +15,7 @@ export default function PersonalSkills(props: { name: boolean | React.ReactChild
     }
 
     return (
-        <div>
+        <div className='ps'>
             <h1 style={nameStyle}>
                 {props.name}
             </h1>

@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ProgressBar } from '../progress-bar.component';
 
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
 
 import testPhoto from '../../images/phone.png'
 
@@ -23,7 +21,8 @@ export default function ListOfProjectsPage() {
 
     const listOfProjects = [
         { name: "Fridge" },
-        { name: "Comics reader" }
+        { name: "Comics reader" },
+        { name: "Android studio app" }
     ]
 
     const redirectToGitHub = () => {
@@ -51,12 +50,15 @@ export default function ListOfProjectsPage() {
                             <div className='project-set'>
                                 <a onClick={() => {
                                     // Set fridge
-                                    if (idx == 0) {
+                                    if (idx === 0) {
                                         setContentOfProject(jsonData.Fridge)
                                     }
                                     // Set comic
-                                    if (idx == 1) {
+                                    if (idx === 1) {
                                         setContentOfProject(jsonData.Comics)
+                                    }
+                                    if (idx === 2) {
+                                        setContentOfProject(jsonData['Android Studio'])
                                     }
                                 }
                                 }><h1>{item.name}</h1></a>
@@ -69,8 +71,10 @@ export default function ListOfProjectsPage() {
                         className='projects-card'
                         style={{ color: "white" }}
                     >
-                        <Card className="bg-dark text-white" ref={boxRef}>
-                            <Card.Img src={testPhoto} style={{
+                        <Card className="bg-dark text-white phone-image" ref={boxRef}>
+                            <Card.Img 
+                                src={testPhoto} 
+                                style={{
                                 position: 'absolute',
                                 textAlign: 'center',
                                 width: 500,
@@ -90,15 +94,15 @@ export default function ListOfProjectsPage() {
                                     {contentOfProject.content}
                                 </Card.Text>
 
-                                <Button
+                                <button
                                     style={{
                                         position: 'relative',
                                         zIndex: 10,
                                     }}
                                     onClick={(() => redirectToGitHub())}
                                 >
-                                    SeeGithub code
-                                </Button>
+                                    Github code
+                                </button>
                             </Card.Body>
                         </Card>
                     </div>

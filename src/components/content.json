@@ -8,7 +8,13 @@
   "Comics": {
     "id": 1,
     "header": "Comic reader",
-    "content": "Not cleaning your fridge can cause smell.",
+    "content": "This application allows it's users to read comics",
     "link": "https://github.com/OrangeFrodo/Void"
+  },
+  "Android Studio": {
+    "id": 2,
+    "header": "Android studio application",
+    "content": "This application contains basic functions of Kotlin and Android studio",
+    "link": "https://github.com/OrangeFrodo/OAMK_FinalApp_NativeProgramming"
   }
 }

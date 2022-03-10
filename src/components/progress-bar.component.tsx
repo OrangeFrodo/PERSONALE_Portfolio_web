@@ -8,7 +8,7 @@ export const ProgressBar = (props: { name: any; bgcolor: any; completed: any; })
         width: '250%',
         backgroundColor: "#e0e0de",
         borderRadius: 50,
-        margin: 50,
+        margin: 10,
         marginTop: 0,
         marginBottom: 20,
         flexShrink: 0,
