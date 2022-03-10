@@ -15,6 +15,7 @@ export default function Skills() {
         { name: "Java", bgcolor: "#6553FF", completed: 56 },        // Java
         { name: "C", bgcolor: "#6553FF", completed: 45 },           // C
         { name: "Kotlin", bgcolor: "#6553FF", completed: 42 },      // Kotlin
+        { name: "SQL", bgcolor: "#6553FF", completed: 38 },         // SQL
         { name: "Flutter", bgcolor: "#6553FF", completed: 36 },     // Flutter
         { name: "Dart", bgcolor: "#6553FF", completed: 33 },        // Dart
     ];
