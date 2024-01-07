@@ -47,7 +47,7 @@ export default function ListOfProjectsPage() {
                         {/* List throught list of projects */}
                         {listOfProjects.map((item, idx) => (
                             // On click function, was not able to move it to separate function
-                            <div className='project-set'>
+                            <div className='project-set pointer'>
                                 <a onClick={() => {
                                     // Set fridge
                                     if (idx === 0) {

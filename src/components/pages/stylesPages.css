@@ -89,6 +89,10 @@ video {
 
 /*Projects styles*/
 
+.pointer {
+  cursor: pointer;
+}
+
 .projects-container {
   height: 1032.9px;
   width: 100%;
